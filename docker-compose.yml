@@ -1,0 +1,12 @@
+version: "3.8" # optional since v1.27.0
+
+services:
+  pg:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: strapi_food_delivery
+    ports:
+      - "5434:5432"
